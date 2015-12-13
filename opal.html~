@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1"
+      http-equiv="content-type">
+    <title>OPAL</title>
+  </head>
+  <body style="color: rgb(0, 0, 0); background-color: rgb(255, 255,
+    255);" alink="#000099" link="#000099" vlink="#990099">
+    <h1 style="font-family: Shruti; margin-left: 40px;"><small><span
+          style="color: rgb(0, 0, 153);">OPAL: Opportunistic Alignment
+          of Advertisement Delivery with Basestation Overloads</span></small></h1>
+    <div style="margin-left: 40px;"><span style="font-family:
+        Helvetica,Arial,sans-serif;"></span><span style="font-family:
+        Helvetica,Arial,sans-serif;">This work is
+        motivated by two observations: (1) Cellular network operators
+        are
+        actively exploring advertisement delivery as a new means </span><span
+        style="font-family: Helvetica,Arial,sans-serif;"></span><span
+        style="font-family: Helvetica,Arial,sans-serif;">of revenue
+        generation an</span><span style="font-family:
+        Helvetica,Arial,sans-serif;"></span><span style="font-family:
+        Helvetica,Arial,sans-serif;">d</span><span style="font-family:
+        Helvetica,Arial,sans-serif;"> </span><span style="font-family:
+        Helvetica,Arial,sans-serif;"><img style=" width: 411px; height:
+          300px;" alt="Picture Not Loading" src="img/opal.png"
+          align="right" hspace="50"></span><br>
+      <span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;(2)
+        Cellular networks perceive intermittent overloads at
+        different times of the day. Bringing the two observations, <span
+          style="font-family: Comic Sans MS;">OPAL</span> is a
+        novel system that opportunistically aligns <br>
+        advertisement delivery with
+        basestation overload. To achieve the alignment systematically, </span><span
+        style="font-family: Helvetica,Arial,sans-serif;"><span
+          style="font-family: Comic Sans MS;">OPAL</span></span><span
+        style="font-family: Helvetica,Arial,sans-serif;">
+        builds on an </span><span style="font-family:
+        Helvetica,Arial,sans-serif;"></span><span style="font-family:
+        Helvetica,Arial,sans-serif;">analytica</span><span
+        style="font-family: Helvetica,Arial,sans-serif;"></span><span
+        style="font-family: Helvetica,Arial,sans-serif;">l framework for
+        tunable unavailability of network
+        <br>
+        service to users during overload. At the same time, if the
+        network is
+        not overloaded enough during a certain p</span><span
+        style="font-family: Helvetica,Arial,sans-serif;"></span><span
+        style="font-family: Helvetica,Arial,sans-serif;">eriod, </span><span
+        style="font-family: Helvetica,Arial,sans-serif;"><span
+          style="font-family: Comic Sans MS;">OPAL</span></span><span
+        style="font-family: Helvetica,Arial,sans-serif;"> schedules
+        enough
+        advertisements to satisfy <br>
+        the advertisement delivery contracts.</span><span
+        style="font-family: Helvetica,Arial,sans-serif;"></span><br>
+      <span style="font-family: helvetica,arial,sans-serif;"></span><br>
+      <span style="font-family: helvetica,arial,sans-serif;">
+      </span><a style=" color: rgb(51, 51, 255);" href="PAPERS/OPAL.pdf">Conference
+        [ACM MobiSys 2011]</a><a style=" color: rgb(51, 51, 255);"
+        href="PAPERS/OPAL.pdf"><span style="color: rgb(51, 51, 255);"></span></a><br>
+      <span style="font-family: helvetica,arial,sans-serif;"></span><br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <span style="font-family: helvetica,arial,sans-serif;">
+        The following demos show the efficacy of </span><span
+        style="font-family: helvetica,arial,sans-serif;"><span
+          style="font-family: Comic Sans MS;">OPAL</span></span><span
+        style="font-family: helvetica,arial,sans-serif;"> on a WiMAX
+        testbed.</span><br>
+    </div>
+    <span style="font-family: helvetica,arial,sans-serif;"></span> <span
+      style="font-family: helvetica,arial,sans-serif;"> </span>
+    <hr style="width: 100%; height: 2px; font-family:
+      helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+    <div style="margin-left: 160px;"><span style="font-family:
+        helvetica,arial,sans-serif; color: rgb(0, 0, 102); font-weight:
+        bold;"></span><br style="font-family:
+        helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+    </div>
+    <div style="margin-left: 40px;"><iframe
+        src="http://www.youtube.com/embed/SWA2FCzJ0Y0"
+        allowfullscreen="true" frameborder="0" height="300" width="480"></iframe>&nbsp;</div>
+    <span style="color: rgb(0, 0, 102); font-family:
+      helvetica,arial,sans-serif;"><br>
+    </span>
+    <div style="margin-left: 40px;"><big><big><big><big><big><big><big><big
+                      style="font-family: Helvetica,Arial,sans-serif;"><big><big><big><font
+                              size="+3"><big><big><big><big><big><big><big><big><big><big><big><span
+                                                      style="color:
+                                                      rgb(51, 51, 51);
+                                                      font-size: 16px;
+                                                      font-style:
+                                                      normal;
+                                                      font-variant:
+                                                      normal;
+                                                      font-weight:
+                                                      normal;
+                                                      letter-spacing:
+                                                      normal;
+                                                      line-height: 18px;
+                                                      orphans: 2;
+                                                      text-align: left;
+                                                      text-indent: 0px;
+                                                      text-transform:
+                                                      none; white-space:
+                                                      normal; widows: 2;
+                                                      word-spacing: 0px;
+                                                      background-color:
+                                                      rgb(235, 235,
+                                                      235); display:
+                                                      inline !
+                                                      important; float:
+                                                      none;">In this
+                                                      demo, we configure
+                                                      a virtualized
+                                                      WiMAX base station
+                                                      (using NVS) for
+                                                      the co-existence
+                                                      of two slices with
+                                                      resource-based
+                                                      reservation. SLICE
+                                                      1 and 2 reserve
+                                                      50% of the total
+                                                      resources each.
+                                                      While SLICE 2
+                                                      employs
+                                                      traditional
+                                                      scheduling like
+                                                      round robin and
+                                                      prop fairness
+                                                      across its flows,
+                                                      SLICE 1 implements
+                                                      OPAL.</span></big></big></big></big></big></big></big></big></big></big></big></font></big></big></big></big></big></big></big></big></big></big></big><br
+        style="color: rgb(51, 51, 51); font-size: 16px; font-style:
+        normal; font-variant: normal; font-weight: normal;
+        letter-spacing: normal; line-height: 18px; orphans: 2;
+        text-align: left; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: 2; word-spacing: 0px;
+        background-color: rgb(235, 235, 235); font-family:
+        Helvetica,Arial,sans-serif;">
+      <br style="color: rgb(51, 51, 51); font-size: 16px; font-style:
+        normal; font-variant: normal; font-weight: normal;
+        letter-spacing: normal; line-height: 18px; orphans: 2;
+        text-align: left; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: 2; word-spacing: 0px;
+        background-color: rgb(235, 235, 235); font-family:
+        Helvetica,Arial,sans-serif;">
+      <big><big><big><big><big><big><big><big style="font-family:
+                      Helvetica,Arial,sans-serif;"><big><big><big><font
+                              size="+3"><big><big><big><big><big><big><big><big><big><big><big><span
+                                                      style="color:
+                                                      rgb(51, 51, 51);
+                                                      font-size: 16px;
+                                                      font-style:
+                                                      normal;
+                                                      font-variant:
+                                                      normal;
+                                                      font-weight:
+                                                      normal;
+                                                      letter-spacing:
+                                                      normal;
+                                                      line-height: 18px;
+                                                      orphans: 2;
+                                                      text-align: left;
+                                                      text-indent: 0px;
+                                                      text-transform:
+                                                      none; white-space:
+                                                      normal; widows: 2;
+                                                      word-spacing: 0px;
+                                                      background-color:
+                                                      rgb(235, 235,
+                                                      235); display:
+                                                      inline !
+                                                      important; float:
+                                                      none; font-family:
+Helvetica,Arial,sans-serif;">In the demo video, the left three netbooks
+                                                      are in SLICE 1 and
+                                                      the right three
+                                                      are in SLICE 2.
+                                                      The demo shows
+                                                      that all clients
+                                                      in SLICE 2 suffer
+                                                      similar
+                                                      performance
+                                                      degradation,
+                                                      whereas one client
+                                                      in SLICE 1 is
+                                                      shown an
+                                                      advertisement in
+                                                      the interest of
+                                                      maximizing the
+                                                      Quality of
+                                                      Experience of the
+                                                      other two users.
+                                                      The demo clearly
+                                                      shows the efficacy
+                                                      of OPAL in
+                                                      achieving good QoE
+                                                      for its users. </span></big></big></big></big></big></big></big></big></big></big></big></font></big></big></big></big></big></big></big></big></big></big></big><span
+        style="font-family: Helvetica,Arial,sans-serif;"></span><br>
+    </div>
+    <span style="color: rgb(0, 0, 102); font-family:
+      helvetica,arial,sans-serif;"></span>
+    <hr style="width: 100%; height: 2px; font-family:
+      helvetica,arial,sans-serif; color: rgb(0, 0, 102);"><br>
+  </body>
+</html>

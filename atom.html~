@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1"
+      http-equiv="content-type">
+    <title>ATOM</title>
+  </head>
+  <body style="color: rgb(0, 0, 0); background-color: rgb(255, 255,
+    255);" alink="#000099" link="#000099" vlink="#990099">
+    <h1 style="font-family: Shruti; margin-left: 40px;"><small><span
+          style="color: rgb(0, 0, 153);">ATOM:
+	  Adaptive Traffic Offloading Solution for Next-generation
+          Mobile Networks</span></small></h1>
+    <div style="margin-left: 40px;"><span style="font-family:
+        Helvetica,Arial,sans-serif;"></span><span style="font-family:
+        Helvetica,Arial,sans-serif;"> Mobile operators are leveraging WiFi access to relieve pressure on
+        their cellular networks and offer faster 
+        </span><span
+        style="font-family: Helvetica,Arial,sans-serif;"></span>
+        <span style="font-family:
+        Helvetica,Arial,sans-serif;"></span><span style="font-family:
+        Helvetica,Arial,sans-serif;"></span><span style="font-family:
+        Helvetica,Arial,sans-serif;"> </span><span style="font-family:
+        Helvetica,Arial,sans-serif;"><img style=" width: 450px; height:
+          330px;" alt="Picture Not Loading" src="img/atom.png"
+          align="right" hspace="50"></span><br>
+      <span style="font-family: Helvetica,Arial,sans-serif;">
+data rates to meet the surging demand of applications.        
+However in today’s networks, operators either lack or have naive
+mechanisms to control the way end users access their WiFi networks.
+As operators deploy LTE networks that offer significantly higher
+data rates, intelligent traffic offloading to WiFi networks can enable
+operators to meet the </span>
+      <span style="font-family: Helvetica,Arial,sans-serif;">
+rising traffic demand in a cost effective
+manner. In this regard, we design and implement ATOM 
+-- an end-end solution for adaptive traffic offloading solution for
+heterogenous WiFi and LTE deployments. ATOM consists of two novel
+components: (i) A practical network interface selection algorithm that
+maps user traffic across WiFi and LTE to optimize user QoE and (ii) an
+interface switching service that provides seamless re-direction of
+ongoing user sessions to enable dynamic traffic management in a
+cost-effective and standards-compatible manner. 
+<br>
+</span>
+      <span style="font-family: helvetica,arial,sans-serif;">
+      </span><a style=" color: rgb(51, 51, 255);" href="PAPERS/ATOM_TR.pdf">ACM
+        Mobicom 2014 Paper</a><a style=" color: rgb(51, 51, 255);"
+        href=""><span style="color: rgb(51, 51, 255);"></span></a><br>
+      <span style="font-family: helvetica,arial,sans-serif;"></span><br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <span style="font-family: helvetica,arial,sans-serif;">
+        The following demo shows the efficacy of </span><span
+        style="font-family: helvetica,arial,sans-serif;"><span
+          style="font-family: Comic Sans MS;">ATOM</span></span><span
+        style="font-family: helvetica,arial,sans-serif;"> on a
+	heterogeneous LTE and WiFI
+        testbed.</span><br>
+    </div>
+    <span style="font-family: helvetica,arial,sans-serif;"></span> <span
+      style="font-family: helvetica,arial,sans-serif;"> </span>
+    <hr style="width: 100%; height: 2px; font-family:
+      helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+    <div style="margin-left: 160px;"><span style="font-family:
+        helvetica,arial,sans-serif; color: rgb(0, 0, 102); font-weight:
+        bold;"></span><br style="font-family:
+        helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+    </div>
+    <div style="margin-left: 40px;">
+    <iframe src="//www.youtube.com/embed/I1CkNpb6bE0?feature=player_detailpage" 
+        allowfullscreen="true" frameborder="0" height="300" width="480"></iframe>&nbsp;</div>
+    <span style="color: rgb(0, 0, 102); font-family:
+      helvetica,arial,sans-serif;"><br>
+    </span>
+    <div style="margin-left: 40px;"><big><big><big><big><big><big><big><big
+                      style="font-family: Helvetica,Arial,sans-serif;"><big><big><big><font
+                              size="+3"><big><big><big><big><big><big><big><big><big><big><big><span
+                                                      style="color:
+                                                      rgb(51, 51, 51);
+                                                      font-size: 16px;
+                                                      font-style:
+                                                      normal;
+                                                      font-variant:
+                                                      normal;
+                                                      font-weight:
+                                                      normal;
+                                                      letter-spacing:
+                                                      normal;
+                                                      line-height: 18px;
+                                                      orphans: 2;
+                                                      text-align: left;
+                                                      text-indent: 0px;
+                                                      text-transform:
+                                                      none; white-space:
+                                                      normal; widows: 2;
+                                                      word-spacing: 0px;
+                                                      background-color:
+                                                      rgb(235, 235,
+                                                      235); display:
+                                                      inline !
+                                                      important; float:
+                                                      none;">In this
+                                                      demo, we setup
+						      an LTE
+						      basestation and
+						      a WiFi AP with 6
+						      users such that
+						      5 users are
+						      within the
+						      converage of the
+						      WiFi AP.
+                                                      All 6 users
+						      stream a 480P
+						      video from
+						      Youtube. We show
+						      the video
+						      streams of the 5
+						      WiFi users in
+						      the demo video
+						      above. 
+						      </span></big></big></big></big></big></big></big></big></big></big></big></font></big></big></big></big></big></big></big></big></big></big></big><br
+        style="color: rgb(51, 51, 51); font-size: 16px; font-style:
+        normal; font-variant: normal; font-weight: normal;
+        letter-spacing: normal; line-height: 18px; orphans: 2;
+        text-align: left; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: 2; word-spacing: 0px;
+        background-color: rgb(235, 235, 235); font-family:
+        Helvetica,Arial,sans-serif;">
+      <br style="color: rgb(51, 51, 51); font-size: 16px; font-style:
+        normal; font-variant: normal; font-weight: normal;
+        letter-spacing: normal; line-height: 18px; orphans: 2;
+        text-align: left; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: 2; word-spacing: 0px;
+        background-color: rgb(235, 235, 235); font-family:
+        Helvetica,Arial,sans-serif;">
+      <big><big><big><big><big><big><big><big style="font-family:
+                      Helvetica,Arial,sans-serif;"><big><big><big><font
+                              size="+3"><big><big><big><big><big><big><big><big><big><big><big><span
+                                                      style="color:
+                                                      rgb(51, 51, 51);
+                                                      font-size: 16px;
+                                                      font-style:
+                                                      normal;
+                                                      font-variant:
+                                                      normal;
+                                                      font-weight:
+                                                      normal;
+                                                      letter-spacing:
+                                                      normal;
+                                                      line-height: 18px;
+                                                      orphans: 2;
+                                                      text-align: left;
+                                                      text-indent: 0px;
+                                                      text-transform:
+                                                      none; white-space:
+                                                      normal; widows: 2;
+                                                      word-spacing: 0px;
+                                                      background-color:
+                                                      rgb(235, 235,
+                                                      235); display:
+                                                      inline !
+                                                      important; float:
+                                                      none; font-family:
+Helvetica,Arial,sans-serif;">In the demo video, the first part depicts
+the WiFi-default scenario which represents the current network deployment
+where user flows are always mapped to WiFi AP if available.
+Since, all 5 users access their video streams through WiFi, the WiFi
+AP gets congested resulting in frequent stalls (re-buffering) in the
+video for all the 5 WiFi users. While the resource utilization of the
+LTE basestation is low. In the second part, we turn on ATOM which
+choses the flows of users 1 and 4 to be switched to the LTE network
+resulting in good QoE and a smooth video stream for all 5 users.</span></big></big></big></big></big></big></big></big></big></big></big></font></big></big></big></big></big></big></big></big></big></big></big><span
+        style="font-family: Helvetica,Arial,sans-serif;"></span><br>
+    </div>
+    <span style="color: rgb(0, 0, 102); font-family:
+      helvetica,arial,sans-serif;"></span>
+    <hr style="width: 100%; height: 2px; font-family:
+      helvetica,arial,sans-serif; color: rgb(0, 0, 102);"><br>
+  </body>
+</html>

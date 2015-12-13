@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1"
+      http-equiv="content-type">
+    <title>NVS: Network Virtualization Substrate for Cellular Networks</title>
+  </head>
+  <body style=" color: rgb(0, 0, 0); background-color: rgb(255, 255,
+    255);" alink="#000099" link="#000099" vlink="#990099">
+    <h1 style="font-family: Shruti;"><small><span style="color: rgb(0,
+          0, 153);">&nbsp;&nbsp; Wireless Resources Virtualization in
+          Cellular Networks</span>&nbsp;&nbsp;&nbsp; </small></h1>
+    <div style="margin-left: 40px;"><font size="-1"><img style=" width:
+          450px; height: 291px;" alt="" src="img/Virtualization.png"
+          align="right" hspace="50" vspace="0"></font> <small
+        style="font-family: Comic Sans MS;"><font style="color: rgb(0,
+          0, 0);" size="-1"><small><big><big>NVS</big></big></small></font></small><font
+        style="color: rgb(0, 0, 0);" size="-1"><span style="font-family:
+          helvetica,arial,sans-serif;"><big style="font-family: Comic
+            Sans MS;"><big></big></big> is a substrate within the
+          basestation for virtualizing the wireless resources of a
+          cellular network, such as a WiMAX or an LTE network.</span></font><font
+        style="color: rgb(0, 0, 0);" size="-1"><span style="font-family:
+          helvetica,arial,sans-serif;"> <br>
+        </span></font><a style="color: rgb(51, 51, 255);"
+        href="http://dl.acm.org/citation.cfm?id=1860023">Conference [ACM MobiCom 2010]</a><span
+        style="color: rgb(51, 51, 255);">&nbsp;&nbsp;&nbsp; <a
+          href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6117098">Journal [TON 2012]</a></span><br>
+      <br>
+      <span style="font-family: Comic Sans MS;">CellSlice</span><font
+        size="-1"><span style="font-family: Helvetica,Arial,sans-serif;">
+          is an overlay scheduler designed for mobile core gateways to
+          achieve the functionality of </span><font style="color:
+          rgb(0, 0, 0);">NVS</font><span style="font-family:
+          Helvetica,Arial,sans-serif;"> with minimal modifications to
+          the basestations</span></font>.<br>
+      <a href="PAPERS/CellSlice.pdf"><span style="color: rgb(0, 0, 238);
+          text-decoration: underline;">Conference [Comsnets 2013]</span></a><br>
+      <font style="color: rgb(0, 0, 0);" size="-1"><span
+          style="font-family: helvetica,arial,sans-serif;"><br>
+          <big>V</big>irtualizing wireless resources in cellular
+          networks fosters several interesting deployment scenarios that
+          are of interest to both academia and industry:</span></font><br
+        style="font-family: helvetica,arial,sans-serif;">
+      <ul style="color: rgb(0, 0, 0);">
+        <li style="font-family: helvetica,arial,sans-serif;"><font
+            size="-1">Active RAN sharing: One radical change that is
+            receiving considerable attention recently is active RAN
+            (Radio Access Network) sharing among Mobile Network
+            Operators (MNOs). RAN sharing enables significant reduction
+            in equipment in low traffic areas and results in at-least
+            100% increased rollout speed with a given cost.</font><br>
+        </li>
+        <li style="font-family: helvetica,arial,sans-serif;"><font
+            size="-1">Mobile Virtual Network Operators (MVNO): In the
+            recent past, several MVNOs have emerged as strong players in
+            the cellular market providing enhanced services. Such MVNOs
+            often do not own spectrum and rely on sharing the wireless
+            resources of a MNO in that region. Virtualization helps
+            partition the wireless resources in an MNO&#8217;s network
+            effectively, thereby encouraging stricter and fine-grained
+            SLAs between MVNOs and MNOs.</font></li>
+        <li style="font-family: helvetica,arial,sans-serif;"><font
+            size="-1">Corporate Bundle Plans: Currently, network
+            operators offer data plans to enterprises and corporations
+            that allow sharing of bandwidth dynamically across their
+            users. However, no bandwidth guarantees are provided.
+            Virtualization may help realize better guarantees on
+            resource allocation, and hence fosters more sophisticated
+            data plans.</font></li>
+        <li style="font-family: helvetica,arial,sans-serif;"><font
+            size="-1"><a href="geni.html">GENI</a> and Beyond:
+            Virtualization can help researchers evaluate their new ideas
+            on commercial base stations and deployments.&nbsp;</font></li>
+        <li style="font-family: helvetica,arial,sans-serif;"><font
+            size="-1">Controlled evaluation: Virtualization enables MNOs
+            to isolate partial wireless resources to deploy and test
+            novel ideas without affecting the operational networks.
+            Currently, MNOs often use dedicated (small scale)
+            deployments to test new ideas.</font></li>
+        <li><font size="-1"><span style="font-family:
+              helvetica,arial,sans-serif;">Services with Leased
+              Networks(SLNs): With the increased use of wireless and
+              mobile networks for Internet services, we envision
+              application service providers reserving bandwidth with
+              MNOs and paying on the behalf of their users to enhance
+              users&#8217; quality of experience. Virtualization helps in
+              ensuring that such reservations are met.</span></font></li>
+      </ul>
+      <font style="color: rgb(0, 0, 0);" size="-1"><span
+          style="font-family: helvetica,arial,sans-serif;"> </span></font><small
+        style="font-family: Comic Sans MS;"><font style="color: rgb(0,
+          0, 0);" size="-1"><small><big><big>NVS</big></big></small></font></small><font
+        style="color: rgb(0, 0, 0);" size="-1"><span style="font-family:
+          helvetica,arial,sans-serif;"> and </span></font><span
+        style="font-family: Comic Sans MS;">CellSlice </span><font
+        style="color: rgb(0, 0, 0);" size="-1"><span style="font-family:
+          helvetica,arial,sans-serif;">enable effective wireless
+          resource virtualization by meeting the following crucial
+          requirements:</span></font></div>
+    <ul style="color: rgb(0, 0, 0); font-family:
+      helvetica,arial,sans-serif; margin-left: 40px;">
+      <font size="-1"> </font>
+      <li><font size="-1"><span style="font-weight: bold;">Isolation</span>
+          of wireless network resources across groups of flows (or
+          slices) <br>
+        </font></li>
+      <font size="-1"> </font>
+      <li><font size="-1">Efficient <span style="font-weight: bold;">utilization</span>
+          of the wireless resources.</font></li>
+      <font size="-1"> </font>
+      <li><font size="-1"><span style="font-weight: bold;">Customization</span>
+          of flow management within individual slices. <br>
+        </font></li>
+      <font size="-1"> </font>
+    </ul>
+    <div style="margin-left: 40px;"><font style="color: rgb(0, 0, 0);"
+        size="-1"><span style="font-family: helvetica,arial,sans-serif;">To
+
+
+
+
+
+
+
+
+
+
+
+          achieve the above, both </span></font><small
+        style="font-family: Comic Sans MS;"><font style="color: rgb(0,
+          0, 0);" size="-1"><small><big><big>NVS</big></big></small></font></small><font
+        style="color: rgb(0, 0, 0);" size="-1"><span style="font-family:
+          helvetica,arial,sans-serif;"> and </span></font><span
+        style="font-family: Comic Sans MS;">CellSlice</span><font
+        style="color: rgb(0, 0, 0);" size="-1"><span style="font-family:
+          helvetica,arial,sans-serif;"> contain two novel components:</span></font><br
+        style="font-family: helvetica,arial,sans-serif;">
+    </div>
+    <ul style="color: rgb(0, 0, 0); font-family:
+      helvetica,arial,sans-serif; margin-left: 40px;">
+      <li><font size="-1"><span style="text-decoration: underline;">Slice
+
+
+
+
+
+
+
+
+
+
+
+            Scheduling:</span> </font><small style="font-family: Comic
+          Sans MS;"><font style="color: rgb(0, 0, 0);" size="-1"><small><big><big>NVS</big></big></small></font></small><font
+          size="-1"> includes a simple and optimal slice scheduling
+          algorithm that is light-weight to implement. It enables
+          co-existence of both bandwidth and resource based slice
+          provisioning: with bandwidth based reservation, slices can
+          reserve certain amount of bandwidth in Mbps on a cellular base
+          station, while resource based reservation allows slices to
+          reserve a percentage of the resource slots in the OFDMA
+          frames.</font></li>
+      <li><font size="-1"><span style="text-decoration: underline;">Flow
+            Scheduling Framework:</span> </font><small
+          style="font-family: Comic Sans MS;"><font style="color: rgb(0,
+            0, 0);" size="-1"><small><big><big>NVS</big></big></small></font></small><font
+          size="-1"> enables individual slices to employ custom flow
+          scheduling policies through a flexible framework.</font><br>
+      </li>
+    </ul>
+    <div style="margin-left: 40px;"><font size="-1"><span style="color:
+          rgb(0, 0, 0); font-family: helvetica,arial,sans-serif;"> We
+          instantiate the </span></font><small style="font-family:
+        Comic Sans MS;"><font style="color: rgb(0, 0, 0);" size="-1"><small><big><big>NVS</big></big></small></font></small><font
+        size="-1"><span style="color: rgb(0, 0, 0); font-family:
+          helvetica,arial,sans-serif;"> and </span></font><span
+        style="font-family: Comic Sans MS;">CellSlice</span><font
+        size="-1"><span style="color: rgb(0, 0, 0); font-family:
+          helvetica,arial,sans-serif;"> prototypes on a WiMAX testbed
+          consisting of:</span></font><br style="color: rgb(0, 0, 0);
+        font-family: helvetica,arial,sans-serif;">
+    </div>
+    <ul style="color: rgb(0, 0, 0); font-family:
+      helvetica,arial,sans-serif; margin-left: 40px;">
+      <li><font size="-1">A Picochip&#8217;s IEEE 802.16e (WiMAX) compliant
+          Base station.</font></li>
+      <li><font size="-1">A Profile-C ASN-gateway installed on a Linux
+          Desktop.</font></li>
+      <li><font size="-1">Six Netbooks with Intel WiMAX mini PCI-X
+          cards.</font></li>
+      <li><font size="-1">A Video server that streams videos to the
+          clients. <br>
+        </font> </li>
+    </ul>
+    <div style="margin-left: 40px;"><font size="-1"><span style="color:
+          rgb(0, 0, 0); font-family: helvetica,arial,sans-serif;"></span></font><span
+        style="font-family: helvetica,arial,sans-serif;"><font size="-1"><span
+            style="color: rgb(0, 0, 0);">The following demos show the
+            efficacy of <big style="font-family: Comic Sans MS;">NVS</big>
+            on a WiMAX testbed.</span></font></span><br>
+      <span style="font-family: helvetica,arial,sans-serif;"></span></div>
+    <span style="font-family: helvetica,arial,sans-serif;"> </span>
+    <hr style="width: 100%; height: 2px; font-family:
+      helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+    <div style="margin-left: 160px;"><span style="font-family:
+        helvetica,arial,sans-serif; color: rgb(0, 0, 102); font-weight:
+        bold;"></span><br style="font-family:
+        helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+    </div>
+    <div style="margin-left: 40px;"><iframe
+        src="http://www.youtube.com/embed/SWA2FCzJ0Y0"
+        allowfullscreen="true" frameborder="0" height="300" width="480"></iframe>&nbsp;</div>
+    <span style="color: rgb(0, 0, 102); font-family:
+      helvetica,arial,sans-serif;"><br>
+    </span>
+    <div style="margin-left: 40px;"><big><big><big><big><big><big><big><big
+                      style="font-family: Helvetica,Arial,sans-serif;"><big><big><big><font
+                              size="+3"><big><big><big><big><big><big><big><big><big><big><big><span
+                                                      style="color:
+                                                      rgb(51, 51, 51);
+                                                      font-size: 13px;
+                                                      font-style:
+                                                      normal;
+                                                      font-variant:
+                                                      normal;
+                                                      font-weight:
+                                                      normal;
+                                                      letter-spacing:
+                                                      normal;
+                                                      line-height: 18px;
+                                                      orphans: 2;
+                                                      text-align: left;
+                                                      text-indent: 0px;
+                                                      text-transform:
+                                                      none; white-space:
+                                                      normal; widows: 2;
+                                                      word-spacing: 0px;
+                                                      background-color:
+                                                      rgb(235, 235,
+                                                      235); display:
+                                                      inline !
+                                                      important; float:
+                                                      none;">In this
+                                                      demo, we configure
+                                                      the virtualized
+                                                      WiMAX base station
+                                                      for the
+                                                      co-existence of
+                                                      two slices with
+                                                      resource-based
+                                                      reservation. SLICE
+                                                      1 and 2 reserve
+                                                      50% of the total
+                                                      resources each.
+                                                      While SLICE 2
+                                                      employs
+                                                      traditional
+                                                      scheduling like
+                                                      round robin and
+                                                      prop fairness
+                                                      across its flows,
+                                                      SLICE 1 performs
+                                                      dynamic admission
+                                                      control and
+                                                      advertising to
+                                                      improve QoE for
+                                                      its users.</span></big></big></big></big></big></big></big></big></big></big></big></font></big></big></big></big></big></big></big></big></big></big></big><br
+        style="color: rgb(51, 51, 51); font-size: 13px; font-style:
+        normal; font-variant: normal; font-weight: normal;
+        letter-spacing: normal; line-height: 18px; orphans: 2;
+        text-align: left; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: 2; word-spacing: 0px;
+        background-color: rgb(235, 235, 235); font-family:
+        Helvetica,Arial,sans-serif;">
+      <br style="color: rgb(51, 51, 51); font-size: 13px; font-style:
+        normal; font-variant: normal; font-weight: normal;
+        letter-spacing: normal; line-height: 18px; orphans: 2;
+        text-align: left; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: 2; word-spacing: 0px;
+        background-color: rgb(235, 235, 235); font-family:
+        Helvetica,Arial,sans-serif;">
+      <big><big><big><big><big><big><big><big style="font-family:
+                      Helvetica,Arial,sans-serif;"><big><big><big><font
+                              size="+3"><big><big><big><big><big><big><big><big><big><big><big><span
+                                                      style="color:
+                                                      rgb(51, 51, 51);
+                                                      font-size: 13px;
+                                                      font-style:
+                                                      normal;
+                                                      font-variant:
+                                                      normal;
+                                                      font-weight:
+                                                      normal;
+                                                      letter-spacing:
+                                                      normal;
+                                                      line-height: 18px;
+                                                      orphans: 2;
+                                                      text-align: left;
+                                                      text-indent: 0px;
+                                                      text-transform:
+                                                      none; white-space:
+                                                      normal; widows: 2;
+                                                      word-spacing: 0px;
+                                                      background-color:
+                                                      rgb(235, 235,
+                                                      235); display:
+                                                      inline !
+                                                      important; float:
+                                                      none; font-family:
+Helvetica,Arial,sans-serif;">In the demo video, the left three netbooks
+                                                      are in SLICE 1 and
+                                                      the right three
+                                                      are in SLICE 2.
+                                                      The demo shows
+                                                      that all clients
+                                                      in SLICE 2 suffer
+                                                      similar
+                                                      performance
+                                                      degradation,
+                                                      whereas one client
+                                                      in SLICE 1 is
+                                                      shown an
+                                                      advertisement in
+                                                      the interest of
+                                                      maximizing the
+                                                      Quality of
+                                                      Experience of the
+                                                      other two users.
+                                                      The demo clearly
+                                                      shows two
+                                                      customized
+                                                      resource
+                                                      management
+                                                      policies running
+                                                      within slices on a
+                                                      single base
+                                                      station
+                                                      simultaneously.
+                                                      This scenario
+                                                      represents two
+                                                      MVNOs on the same
+                                                      MNO using
+                                                      different flow
+                                                      management schemes
+                                                      for its respective
+                                                      users. It also
+                                                      represents two
+                                                      experimenters
+                                                      sharing the same
+                                                      testbed for
+                                                      conducting
+                                                      scheduler
+                                                      research.</span></big></big></big></big></big></big></big></big></big></big></big></font></big></big></big></big></big></big></big></big></big></big></big><br>
+    </div>
+    <span style="color: rgb(0, 0, 102); font-family:
+      helvetica,arial,sans-serif;"></span>
+    <hr style="width: 100%; height: 2px; font-family:
+      helvetica,arial,sans-serif; color: rgb(0, 0, 102);"><br>
+    <span style="font-weight: bold;"><br>
+    </span>
+  </body>
+</html>

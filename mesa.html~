@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>MESA</title>
+</head>
+<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"
+ vlink="#990099" alink="#000099" link="#000099">
+<br>
+<div style="text-align: center;">
+<h1 style="color: rgb(0, 102, 0);"><span
+ style="font-family: helvetica,arial,sans-serif;">MESA: Farsighted Flow
+Management for Video Delivery in Wireless Networks<br>
+</span></h1>
+<span style="font-family: helvetica,arial,sans-serif;"></span></div>
+<span style="font-family: helvetica,arial,sans-serif;">Video traffic
+over cellular and broadband wireless access networks has been rapidly
+increasing in the recent years. At the same time, the wireless network
+speeds are not increasing as quickly, thereby often leading to
+congestion at the wireless access links. Further, this scenario is
+unlikely to change significantly in the near future. In minimizing the
+effect of this mismatch at such bottleneck links, we explore a
+farsighted flow management framework, called MESA, which attempts to
+maximize the long-term quality of experience for each user. MESA has
+three key differentiating features: (1) It enables joint soft admission
+control and scheduling across video&nbsp; flows, which we demonstrate
+to be a more appropriate approach for non-elastic traffic such as
+video,
+(2) it takes into account a long-term dissatisfaction metric in making
+admission control and scheduling decisions, which results in a uniform
+quality of experience to users, and (3) it builds on the resource
+virtualization paradigm to enable extensibility in response to future
+trends and innovations. We implement a prototype system of MESA and
+evaluate it in detail on a WiMAX testbed using both static and mobile
+client scenarios. </span><span
+ style="font-family: helvetica,arial,sans-serif;"></span><br>
+<br>
+<h3><a href="PAPERS/MESA_comsnets.pdf">Click
+here for the related paper that appeared at IEEE COMSNETS 2011</a></h3>
+<span style="font-family: helvetica,arial,sans-serif;"><br>
+The following demos show the efficacy of MESA on a WiMAX testbed.<br>
+</span><span
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);"
+ class="twikiCurrentTopicLink twikiLink"></span><br
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+<hr
+ style="width: 100%; height: 2px; font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);"><br
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+<span
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102); font-weight: bold;">UDP
+DEMO
+(Play
+with
+Windows Media Player or VLC player)</span><br
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+<br>
+<span
+ style="color: rgb(0, 0, 102); font-family: helvetica,arial,sans-serif;">The
+following
+three
+videos
+compare
+the user perceived quality of downlink
+video transmission with and without MESA for RTP-based streaming.</span><br
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+<ol
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+  <li><a href="vanilla.mpg">Vanilla</a>: This case emulates traditional
+admission control without considering dynamic variations after flow
+admission. Three flows are admitted into the system with cumulative
+average rate below the base station capacity. However, due to
+fluctuations in video traffic and fluctuating wireless channel
+capacity, each flow perceives degraded video quality multiple
+times as the video progress. Notice the occasional stalls and blotchy
+frames.<br>
+  </li>
+  <li><a href="MESA-unmarked.mpg">MESA-unmarked</a><span
+ style="text-decoration: underline;">:</span> In this case, MESA
+selects one flow and deprioritizes it over the other two flows.
+However, in this case, the source does not mark packets indicating
+which&nbsp; packets can be dropped. User 1 gets selected in this case
+to be victimized. The other two users receive good quality video.<span
+ class="twikiCurrentTopicLink twikiLink"></span></li>
+  <li><a href="MESA-marked.mpg">MESA-marked</a>: In this case, the
+source marks packets explicitly indicating which packets can be
+dropped in the victim slice. MESA drops these unimportant packets and
+improves the quality
+of the victimized flow too. User 2 is selected to be victimized in this
+case.&nbsp;</li>
+</ol>
+<hr
+ style="width: 100%; height: 2px; font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);"><br
+ style="color: rgb(0, 0, 102);">
+<a href="MESA-tr.pdf"><span
+ style="text-decoration: underline; font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);"></span></a><br
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+<hr
+ style="width: 100%; height: 2px; font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);"><br
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+<span
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102); font-weight: bold;">TCP
+DEMO
+(Play
+with
+Windows Media Player or VLC player)</span><br
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+<br>
+<span
+ style="color: rgb(0, 0, 102); font-family: helvetica,arial,sans-serif;">The
+following
+videos
+compare the user perceived quality of downlink
+video transmission with and without MESA for Youtube TCP based Videos.</span><br
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+<ol
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+  <li><a href="vanilla.mov">Vanilla</a>: This case emulates traditional
+admission control without considering dynamic variations after flow
+admission. Six flows are admitted into the system with cumulative
+average rate below the base station capacity. However, due to
+fluctuations in video traffic and fluctuating wireless channel
+capacity, each flow perceives degraded video quality multiple
+times as the video progress. Notice the periodic stalls in the videos.<br>
+  </li>
+  <li><a href="mesa.mov">MESA:</a> In this case, MESA
+selects one or two flows and deprioritizes it over the other flows.
+This ensures that other clients see good quality.<span
+ class="twikiCurrentTopicLink twikiLink"></span></li>
+</ol>
+<hr
+ style="width: 100%; height: 2px; font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);"><br
+ style="color: rgb(0, 0, 102);">
+<a><span
+ style="text-decoration: underline; font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);"></span></a><br
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+<br
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 102);">
+<br>
+<br>
+</body>
+</html>
